@@ -1,5 +1,21 @@
-# smokeping
+### smokeping
 Smokeping docker-compose
-Create Docker macvlan network with:
 
-```docker network create -d macvlan --subnet=192.168.2.0/16 --gateway=192.168.1.1  -o parent=eth0 pub_net```
+### features
+
+- working macvlan with docker
+- systemd network devices
+- each container can reach the whole nework (full routing)
+- `docker-compose.yml` example with static ipv4 on macvlan
+- if no ip defined, container get a ip within `192.168.155.192/27`
+
+### macvlan
+```bash
+docker network create \
+                    -d macvlan \
+                    -o parent=eth0 \
+                    --subnet=192.168.155.0/24 \
+                    --gateway=192.168.155.0 \
+                    --ip-range 192.168.155.192/27 \
+                    pub_net # the name
+```
