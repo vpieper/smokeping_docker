@@ -8,7 +8,7 @@ Smokeping docker-compose
 - systemd network devices
 - each container can reach the whole nework (full routing)
 - `docker-compose.yml` example with static ipv4 on macvlan
-- if no ip defined, container get a ip within `192.168.155.192/27`
+- if no ip defined, container gets an ip within `192.168.0.180/27`
 
 ### macvlan
 ```bash
