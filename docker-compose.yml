@@ -2,7 +2,7 @@
 version: "3.6"
 services:
   smokeping:
-    image: linuxserver/smokeping
+    image: linuxserver/smokeping:latest
     container_name: smokeping
     environment:
       - PUID=1000
