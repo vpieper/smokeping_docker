@@ -5,6 +5,7 @@ Smokeping docker-compose
 ### features
 
 - working macvlan with docker
+- latest Smokeping docker image
 - systemd network devices
 - each container can reach the whole nework (full routing)
 - `docker-compose.yml` example with static ipv4 on macvlan
