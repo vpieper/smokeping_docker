@@ -1,4 +1,4 @@
-# Smokeping docker-compose wth macvlan
+# Smokeping docker-compose with macvlan or localhost for use with reverse proxy
 
 Smokeping docker-compose
 
