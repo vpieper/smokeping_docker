@@ -11,10 +11,6 @@ services:
     volumes:
       - /home/vincent/docker/smokeping/config:/config
       - /home/vincent/docker/smokeping/data:/data
-    networks:
-      pub_net:
-        ipv4_address: 192.168.1.150
+    ports:
+      - 8095:80
     restart: unless-stopped
-networks:
-  pub_net:
-    external: true
